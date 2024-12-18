@@ -16,7 +16,7 @@ private url= 'https://reqres.in/api'
     );
   }
   getUserById(id:string){
-    return this.http.get(this.url+'/users/'+id+'/&delay=5').pipe(
+    return this.http.get(this.url+'/users/'+id).pipe(
       map((resp:any) =>  resp['data']),
     );
   }
